@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curso de HTML - DIO</title>
+    <style>
+        /* Estilização básica */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background-image: url('imagem.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+            color: white; /* texto branco para contraste */
+        }
+
+        /* Camada escura semitransparente sobre a imagem */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* preto 50% transparente */
+            z-index: -1; /* atrás do conteúdo */
+        }
+
+        header, footer {
+            background-color: rgba(240, 240, 240, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: #333;
+            border-radius: 8px;
+            margin: 10px 20px;
+        }
+
+        main {
+            padding: 20px;
+            margin: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #80b3ff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .voltar {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="inicio">Meu Aprendizado</h1>
+    </header>
+
+    <hr />
+
+    <main>
+        <!-- Índice de navegação -->
+        <section>
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#tags">Tags</a></li>
+                <li><a href="#semantica">Semântica</a></li>
+            </ul>
+            <a class="voltar" href="#inicio">Voltar ao início</a>
+        </section>
+
+        <hr />
+
+        <!-- Seção Tags -->
+        <section id="tags">
+            <h2>Tags</h2>
+            <p>
+                Dentro do curso, ficou bem claro que o HTML trabalha com tags. Temos as que se fecham sozinhas e as que precisam ser fechadas manualmente.
+                Também foi muito bem explicado que o uso das tags deve ser feito da forma mais semântica possível, pois é por meio da semântica do HTML que os leitores de tela irão fazer a leitura do conteúdo para pessoas com deficiência visual.
+                Dentro deste assunto, vimos tags como <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code> e <code>&lt;footer&gt;</code>, todas elas essenciais para um HTML semântico.
+            </p>
+            <a class="voltar" href="#inicio">Voltar ao início</a>
+        </section>
+
+        <hr />
+
+        <!-- Seção Semântica -->
+        <section id="semantica">
+            <h2>Semântica</h2>
+            <p>
+                Foi deixado bem claro pelo professor, através do acesso à documentação, que o HTML está deixando de ser apenas um marcador de conteúdo e está evoluindo para ser também um estruturador de conteúdo.
+            </p>
+            <a class="voltar" href="#inicio">Voltar ao início</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Rodney como parte do curso da DIO.</p>
+        <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
